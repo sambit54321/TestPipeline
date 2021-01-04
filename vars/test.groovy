@@ -1,7 +1,11 @@
 def info(message) {
-    echo "INFO: ${message}"
+    stage("Info"){
+        echo "INFO: ${message}"
+    }
 }
 
 def warning(message) {
-    echo "WARNING: ${message}"
+    stage("Warning"){
+        echo "WARNING: ${message}"
+    }
 }
